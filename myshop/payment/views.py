@@ -7,8 +7,8 @@ from orders.models import Order
 
 
 # create the Stripe instance
-stripe.api_key = settings.STRIPE_SECRET_KEY
-stripe.api_version = settings.STRIPE_API_VERSION
+#stripe.api_key = settings.STRIPE_SECRET_KEY
+#stripe.api_version = settings.STRIPE_API_VERSION
 
 
 def payment_process(request):
@@ -53,10 +53,10 @@ def payment_process(request):
             }]
 
         # create Stripe checkout session
-        session = stripe.checkout.Session.create(**session_data)
+        #session = stripe.checkout.Session.create(**session_data)
 
         # redirect to Stripe payment form
-        return redirect(session.url, code=303)
+        return render(request,'payment/completed.html' )
 
     else:
         return render(request, 'payment/process.html', locals())
