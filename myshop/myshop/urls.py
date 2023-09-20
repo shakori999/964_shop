@@ -22,7 +22,7 @@ from django.utils.translation import gettext_lazy as _
 from payment import webhooks
 
 urlpatterns = i18n_patterns(
-    path('admin/', admin.site.urls),
+    path('getadminorder/', admin.site.urls),
     path(_('cart/'), include('cart.urls', namespace='cart')),
     path(_('orders/'), include('orders.urls', namespace='orders')),
     path(_('payment/'), include('payment.urls', namespace='payment')),
