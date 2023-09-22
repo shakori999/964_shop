@@ -12,13 +12,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
-import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-#BASE_DIR = Path(__file__).resolve().parent.parent
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.join(__file__, os.pardir))))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -121,7 +118,7 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', _('English')),
-    ('es', _('Spanish')),
+    ('ar', _('Arabic')),
 ]
 
 LOCALE_PATHS = [
@@ -173,7 +170,7 @@ REDIS_DB = 1
 PARLER_LANGUAGES = {
     None: (
         {'code': 'en'},
-        {'code': 'es'},
+        {'code': 'ar'},
     ),
     'default': {
         'fallback': 'en',
