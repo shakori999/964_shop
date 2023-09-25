@@ -21,36 +21,36 @@ msgstr ""
 
 #: orders/models.py:12
 msgid "first name"
-msgstr "nombre"
+msgstr "الاسم الأول"
 
 #: orders/models.py:14
 msgid "last name"
-msgstr "apellido"
+msgstr "اسم العائلة"
 
 #: orders/models.py:16
 msgid "e-mail"
-msgstr "e-mail"
+msgstr "بريد إلكتروني"
 
 #: orders/models.py:17
 msgid "address"
-msgstr "dirección"
+msgstr "عنوان"
 
 #: orders/models.py:19
 msgid "postal code"
-msgstr "código postal"
+msgstr "رمز بريدي"
 
 #: orders/models.py:21
 msgid "city"
-msgstr "ciudad"
+msgstr "المدينة"
 
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:9
 msgid "Checkout"
-msgstr "Compra"
+msgstr "الدفع"
 
 #: orders/templates/orders/order/create.html:11
 msgid "Your order"
-msgstr "Su compra"
+msgstr "طلبك"
 
 #: orders/templates/orders/order/create.html:21
 #, python-format
@@ -60,17 +60,17 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"            \"%(code)s\" (%(discount)s%% descuento)\n"
+"            \"%(code)s\" (%(discount)s%% خصم)\n"
 "          "
 
 #: orders/templates/orders/order/create.html:28
 #: orders/templates/orders/order/pdf.html:58
 msgid "Total"
-msgstr "Total"
+msgstr "المجموع"
 
 #: orders/templates/orders/order/create.html:32
 msgid "Place order"
-msgstr "Realizar compra"
+msgstr "مكان الامر"
 
 #: orders/templates/orders/order/pdf.html:4
 msgid "My shop"
@@ -78,23 +78,23 @@ msgstr "Mi tienda"
 
 #: orders/templates/orders/order/pdf.html:6
 msgid "Invoice no."
-msgstr "Factura no."
+msgstr "رقم الفاتورة."
 
 #: orders/templates/orders/order/pdf.html:11
 msgid "Bill to"
-msgstr "Facturar a"
+msgstr "الفاتورة"
 
 #: orders/templates/orders/order/pdf.html:18
 msgid "Items bought"
-msgstr "Productos comprados"
+msgstr "العناصر التي تم شراؤها"
 
 #: orders/templates/orders/order/pdf.html:22
 msgid "Product"
-msgstr "Producto"
+msgstr "Product"
 
 #: orders/templates/orders/order/pdf.html:23
 msgid "Price"
-msgstr "Precio"
+msgstr "سعر"
 
 #: orders/templates/orders/order/pdf.html:24
 msgid "Quantity"
