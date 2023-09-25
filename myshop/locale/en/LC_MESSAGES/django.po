@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-10 23:23+0200\n"
+"POT-Creation-Date: 2023-09-25 17:49+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,7 @@ msgid "English"
 msgstr ""
 
 #: myshop/settings.py:122
-msgid "Spanish"
+msgid "Arabic"
 msgstr ""
 
 #: myshop/urls.py:26
@@ -117,15 +117,15 @@ msgstr ""
 msgid "coupons/"
 msgstr ""
 
-#: payment/templates/payment/canceled.html:3
+#: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
 msgstr ""
 
-#: payment/templates/payment/canceled.html:6
+#: payment/templates/payment/canceled.html:7
 msgid "Your payment has not been processed"
 msgstr ""
 
-#: payment/templates/payment/canceled.html:7
+#: payment/templates/payment/canceled.html:8
 msgid "There was a problem processing your payment."
 msgstr ""
 

@@ -119,7 +119,7 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', _('English')),
-    ('es', _('Spanish')),
+    ('ar', _('Arabic')),
 ]
 
 LOCALE_PATHS = [
@@ -171,7 +171,7 @@ REDIS_DB = 1
 PARLER_LANGUAGES = {
     None: (
         {'code': 'en'},
-        {'code': 'es'},
+        {'code': 'ar'},
     ),
     'default': {
         'fallback': 'en',
