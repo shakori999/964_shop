@@ -73,8 +73,8 @@ msgid "Place order"
 msgstr "مكان الامر"
 
 #: orders/templates/orders/order/pdf.html:4
-msgid "My shop"
-msgstr "Mi tienda"
+msgid "+946"
+msgstr "+964"
 
 #: orders/templates/orders/order/pdf.html:6
 msgid "Invoice no."
@@ -90,7 +90,7 @@ msgstr "العناصر التي تم شراؤها"
 
 #: orders/templates/orders/order/pdf.html:22
 msgid "Product"
-msgstr "Product"
+msgstr "المنتج"
 
 #: orders/templates/orders/order/pdf.html:23
 msgid "Price"
@@ -98,15 +98,15 @@ msgstr "سعر"
 
 #: orders/templates/orders/order/pdf.html:24
 msgid "Quantity"
-msgstr "Cantidad"
+msgstr "العدد"
 
 #: orders/templates/orders/order/pdf.html:25
 msgid "Cost"
-msgstr "Coste"
+msgstr "التكلفة"
 
 #: orders/templates/orders/order/pdf.html:40
 msgid "Subtotal"
-msgstr "Subtotal"
+msgstr "المجموع الفرعي"
 
 #: orders/templates/orders/order/pdf.html:47
 #, python-format
@@ -116,16 +116,16 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"              \"%(code)s\" (%(discount)s%% descuento)\n"
+"              \"%(code)s\" (%(discount)s%% خصم)\n"
 "            "
 
 #: orders/templates/orders/order/pdf.html:65
 msgid "Paid"
-msgstr "Pagado"
+msgstr "تم الدفع"
 
 #: orders/templates/orders/order/pdf.html:65
 msgid "Pending payment"
-msgstr "Pendiente de pago"
+msgstr "لم يتم الدفع الى الان"
 
 #: orders/urls.py:10
 msgid "create/"

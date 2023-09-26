@@ -123,35 +123,35 @@ msgstr "coupons/"
 
 #: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
-msgstr "Pago cancelado"
+msgstr "تم الغاء العملية"
 
 #: payment/templates/payment/canceled.html:7
 msgid "Your payment has not been processed"
-msgstr "Su pago no ha sido procesado"
+msgstr "افعملية لم تمم بنجاح"
 
 #: payment/templates/payment/canceled.html:8
 msgid "There was a problem processing your payment."
-msgstr "Ha habido un problema con el procesamiento del pago."
+msgstr "هناك مشكلة في معالجة طلبك."
 
 #: payment/templates/payment/completed.html:4
 msgid "Payment successful"
-msgstr "Pago realizado"
+msgstr "تمت عملية الدفع بنجاح"
 
 #: payment/templates/payment/completed.html:7
 msgid "Your payment was successful"
-msgstr "Su pago ha sido realizado"
+msgstr "اكتملت عملية الشراء"
 
 #: payment/templates/payment/completed.html:8
 msgid "Your payment has been processed successfully."
-msgstr "Su pago se ha procesado correctamente."
+msgstr "تمت معالجة عملية الشراء بنجاح."
 
 #: payment/templates/payment/process.html:5
 msgid "Pay your order"
-msgstr "Pague su compra"
+msgstr "دفع طلبك"
 
 #: payment/templates/payment/process.html:8
 msgid "Order summary"
-msgstr "Resumen de compra"
+msgstr "ملخص الطلب"
 
 #: payment/templates/payment/process.html:42
 #, python-format
@@ -161,12 +161,12 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"              \"%(code)s\" (%(discount)s%% descuento)\n"
+"              \"%(code)s\" (%(discount)s%% تخفيظ بنسبة)\n"
 "            "
 
 #: payment/templates/payment/process.html:62
 msgid "Pay now"
-msgstr "Pagar ahora"
+msgstr "دفع الان"
 
 #: payment/urls.py:8
 msgid "process/"
@@ -181,12 +181,12 @@ msgid "canceled/"
 msgstr "cancelado/"
 
 #: shop/templates/shop/base.html:7 shop/templates/shop/base.html:12
-msgid "My shop"
-msgstr "Mi tienda"
+msgid "+964"
+msgstr "+964"
 
 #: shop/templates/shop/base.html:17
 msgid "Language"
-msgstr "Idioma"
+msgstr "اللغة"
 
 #: shop/templates/shop/base.html:35
 msgid "Your cart"
@@ -204,11 +204,11 @@ msgid_plural ""
 "              "
 msgstr[0] ""
 "\n"
-"                %(items)s producto, $%(total)s\n"
+"                %(items)s المنتج, $%(total)s\n"
 "              "
 msgstr[1] ""
 "\n"
-"                %(items)s productos, $%(total)s\n"
+"                %(items)s المنتجات, $%(total)s\n"
 "              "
 
 #: shop/templates/shop/base.html:44
