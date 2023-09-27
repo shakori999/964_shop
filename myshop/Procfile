@@ -1,1 +1,2 @@
 web: gunicorn myshop.wsgi
+release: python manage.py migrate
