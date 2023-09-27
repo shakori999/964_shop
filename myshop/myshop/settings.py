@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import dj_database_url
+
 
 from pathlib import Path
 from environs import Env
@@ -90,7 +92,7 @@ WSGI_APPLICATION = 'myshop.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-"default": env.dj_db_url("DATABASE_URL")
+    "default": env.dj_db_url("DATABASE_URL")
  # new
 }
 
