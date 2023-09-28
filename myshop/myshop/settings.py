@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import dj_database_url
 
+import django_heroku
 
 from pathlib import Path
 from environs import Env
+
+django_heroku.settings(locals())
 
 from django.utils.translation import gettext_lazy as _
 
