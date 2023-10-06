@@ -95,8 +95,14 @@ WSGI_APPLICATION = 'myshop.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    "default": env.dj_db_url("DATABASE_URL")
- # new
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "db",
+        "PORT": "5432",
+    }
 }
 
 # Password validation
@@ -117,6 +123,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://redis:6379/1",  # Use the service name defined in docker-compose.yml
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -189,15 +204,15 @@ PARLER_LANGUAGES = {
 }
 
 #security 
-SECURE_HSTS_SECONDS = 31536000  # Set the value to the desired duration in seconds
-SECURE_SSL_REDIRECT = True
+SECURE_HSTS_SECONDS = 0  # Set the value to the desired duration in seconds
+SECURE_SSL_REDIRECT = False
 
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 # if in dev mood turn it to false
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
 
-SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_PRELOAD = False
 
 CSRF_COOKIE_SECURE = True
 

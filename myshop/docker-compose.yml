@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  # Django web application
+  web:
+    restart: always
+    container_name: assad-ecommerce
+    build:
+      context: .
+        #command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn myshop.wsgi -b 0.0.0.0:8000 # new
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - DEBUG=True
+      - DJANGO_SETTINGS_MODULE=myshop.settings
+      - CACHE_URL=redis://redis:6379/1  # Use the service name defined in this docker-compose file
+      - SECRET_KEY=DzyCzcVNPXCdZqkBo7-d0UFK3HYSFCguqC6ci_M-wzM
+  # PostgreSQL database
+  db:
+    image: postgres:13  # Use the desired PostgreSQL version
+    container_name: postgres_db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Redis cache server
+  redis:
+    image: redis:latest
+    restart: always
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+
+  # Other services (e.g., Redis Queue, Celery) can be added as needed
+
+volumes:
+  postgres_data:  # Persistent volume for PostgreSQL data
