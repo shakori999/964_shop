@@ -39,11 +39,18 @@ services:
   redis:
     image: redis:latest
     restart: always
-    container_name: redis_cache
+    container_name: redis_cache_ecommerce
     ports:
       - "6379:6379"
 
   # Other services (e.g., Redis Queue, Celery) can be added as needed
-
+  #celery
+  celery_worker:
+      build: .
+      command: celery -A myshop worker -l info
+      volumes:
+        - .:/usr/src/app/
+      depends_on:
+        - redis
 volumes:
   postgres_data:  # Persistent volume for PostgreSQL data

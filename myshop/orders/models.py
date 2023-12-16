@@ -13,6 +13,9 @@ class Order(models.Model):
                                   max_length=50)
     last_name = models.CharField(_('last name'),
                                  max_length=50)
+    full_name = models.CharField(_('full name'),
+                                 max_length=50,
+                                 )
     email = models.EmailField(_('e-mail'))
     address = models.CharField(_('address'),
                                max_length=250)
@@ -21,6 +24,8 @@ class Order(models.Model):
     city = models.CharField(_('city'),
                             max_length=100)
     created = models.DateTimeField(auto_now_add=True)
+    phone_number = models.CharField(max_length=12)
+
     updated = models.DateTimeField(auto_now=True)
     paid = models.BooleanField(default=False)
     stripe_id = models.CharField(max_length=250, blank=True)
